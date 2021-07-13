@@ -1,6 +1,7 @@
 // Welcome to C++ ATM Project for Begginers
 
 #include<iostream>
+#include<iomanip>
 using namespace std;
 
 //This is the menu user will see
@@ -27,7 +28,7 @@ int main() {
 
 		//Main code
 		switch (option) {
-		case 1: cout << "Balance is: $" << balance << endl;   //Cheaking Balance
+		case 1: cout << "Balance is: $" << fixed << setprecision(2) << balance << endl;   //Cheaking Balance
 			break;
 		case 2: cout << "Deposit amount: $";					  //Depositing an amount
 			double depositAmount;
